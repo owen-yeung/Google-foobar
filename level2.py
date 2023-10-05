@@ -1,15 +1,3 @@
-def solution(l):
-    # Your code here
-    tuples = []
-    res = []
-    for s in l:
-        tuples.append(str_to_tuple(s))
-    sorted_tuples = sorted(tuples)
-    for t in sorted_tuples:
-        res.append(tuple_to_str(t))
-    return res
-
-
 def str_to_tuple(version):
     tiers = version.count('.')
     res_list = []
@@ -27,6 +15,17 @@ def tuple_to_str(tup):
     for t in range(tiers): #hoping this just exits with empty range
         res += str(tup[t]) + "."
     return res[:-1]
+
+def solution(l):
+    # Your code here
+    tuples = []
+    for s in l:
+        tuples.append(str_to_tuple(s))
+    l = []
+    tuples.sort()
+    for t in tuples:
+        l.append(tuple_to_str(t))
+    return l
 
 '''
 Input:
