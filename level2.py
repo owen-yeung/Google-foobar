@@ -12,7 +12,7 @@ def str_to_tuple(version):
 def tuple_to_str(tup):
     tiers = len(tup)
     res = ""
-    for t in range(tiers): #hoping this just exits with empty range
+    for t in range(tiers):
         res += str(tup[t]) + "."
     return res[:-1]
 
@@ -38,6 +38,3 @@ solution.solution(["1.1.2", "1.0", "1.3.3", "1.0.12", "1.0.2"])
 Output:
     1.0,1.0.2,1.0.12,1.1.2,1.3.3
 '''
-print(solution(["1.11", "2.0.0", "1.2", "2", "0.1", "1.2.1", "1.1.1", "2.0"]))
-print(solution(["1.1.2", "1.0", "1.3.3", "1.0.12", "1.0.2"]))
-# print(sorted([(1,1,2), (1,0), (1,3,3), (1,0,12), (1,0,2), (1,)]))
