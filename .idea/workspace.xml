@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="0fb4511e-1432-44ac-b89c-abc60a480476" name="Changes" comment="still failing one test on 3-2">
       <change afterPath="$PROJECT_DIR$/level3-2gpt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/level3-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/level3-2.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="0fb4511e-1432-44ac-b89c-abc60a480476" name="Changes" comment="3-2 done" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +147,27 @@
       <option name="project" value="LOCAL" />
       <updated>1696778347094</updated>
     </task>
+<<<<<<< Updated upstream
     <option name="localTasksCounter" value="10" />
+=======
+    <task id="LOCAL-00010" summary="checkpoint: working solution for 3-2 but too slow, going to try dynamic programming">
+      <option name="closed" value="true" />
+      <created>1696783340804</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696783340804</updated>
+    </task>
+    <task id="LOCAL-00011" summary="3-2 done">
+      <option name="closed" value="true" />
+      <created>1696785836422</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696785836422</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +187,12 @@
     <MESSAGE value="finished level 2" />
     <MESSAGE value="finished level 3-1" />
     <MESSAGE value="still failing one test on 3-2" />
+<<<<<<< Updated upstream
     <option name="LAST_COMMIT_MESSAGE" value="still failing one test on 3-2" />
+=======
+    <MESSAGE value="checkpoint: working solution for 3-2 but too slow, going to try dynamic programming" />
+    <MESSAGE value="3-2 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-2 done" />
+>>>>>>> Stashed changes
   </component>
 </project>
