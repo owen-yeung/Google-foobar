@@ -1,3 +1,6 @@
+'''
+Challenge: Given a list of integers, return the maximum product of a non-empty subset of the integers
+'''
 def solution(xs):
     xs.sort()
     if len(xs) == 1 and xs[0] < 0:

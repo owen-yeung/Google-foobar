@@ -1,4 +1,7 @@
-
+'''
+Challenge: (x,y) can turn into (x+y, y) or (x, y+x) each step, with x=y=1 at step 0.
+Given some x,y return the minimum number of steps it takes to reach x,y (as a str)
+'''
 def solution(x, y):
     return tostr(last_step(int(x), int(y)))
 

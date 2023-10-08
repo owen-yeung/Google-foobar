@@ -1,3 +1,6 @@
+'''
+Challenge: order a list of version numbers of the form x.y.z lexicographically
+'''
 def str_to_tuple(version):
     tiers = version.count('.')
     res_list = []

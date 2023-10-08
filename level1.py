@@ -1,3 +1,6 @@
+'''
+Challenge: decode messages written in reverse alphabet (only lowercase letters encoded)
+'''
 def solution(x):
     # Your code here
     if not isinstance(x, str):
