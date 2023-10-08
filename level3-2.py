@@ -1,6 +1,8 @@
 '''
 Challenge: Return number of triples (a,b,c) in a list that satisfy c % b == 0 and b % a == 0
 '''
+
+# probably not a runtime problem? there exists a "took too long" error
 def solution(l):
     '''
     algorithm: work backwards from the list
@@ -53,7 +55,8 @@ def num_pairs(lst):
 
 # print(solution(range(1, 2000)))
 # print([solution([1] * i) for i in range(3, 20)])
-print(solution([2] * 2000))
+l = [1,2,3]
+print(l[:-1])
 # print(solution([1, 2, 3, 4, 5, 6]), solution([1,1,1]))
 
 # Check mutating list
