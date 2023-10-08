@@ -38,14 +38,14 @@ def num_pairs(lst):
     count = 0
     # catch ones
     # generalize: if there's a number that divides every number behind,
-    oneless = []
-    length = len(lst)
-    for i in range(length):
-        if lst[i] == 1:
-            count += length - i - 1
-        else:
-            oneless.append(lst[i])
-    lst = oneless
+    # oneless = []
+    # length = len(lst)
+    # for i in range(length):
+    #     if lst[i] == 1:
+    #         count += length - i - 1
+    #     else:
+    #         oneless.append(lst[i])
+    # lst = oneless
     length = len(lst)
     for i in range(length - 1, 0, -1):
         for j in range(i):
@@ -55,9 +55,11 @@ def num_pairs(lst):
 
 # print(solution(range(1, 2000)))
 # print([solution([1] * i) for i in range(3, 20)])
-l = [1,2,3]
-print(l[:-1])
-# print(solution([1, 2, 3, 4, 5, 6]), solution([1,1,1]))
+# l = [1,2,3]
+# print(l[:-1])
+print(solution([1, 2, 3, 4, 5, 6]), solution([1,1,1]))
 
 # Check mutating list
+
+# if list is sorted, is there a faster algorithm?
 

@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fb4511e-1432-44ac-b89c-abc60a480476" name="Changes" comment="still failing one test on 3-2">
+      <change afterPath="$PROJECT_DIR$/level3-2gpt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/level3-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/level3-2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696777804104</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="still failing one test on 3-2">
+      <option name="closed" value="true" />
+      <created>1696778347094</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696778347094</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
