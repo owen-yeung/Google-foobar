@@ -45,7 +45,6 @@ def last_step(x, y):
             return used_y + 1
         elif y_inf:
             return used_x + 1
-        else:
-            raise NotImplementedError
+
 
 print(solution(4, 7))
