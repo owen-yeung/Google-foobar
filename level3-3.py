@@ -2,6 +2,7 @@
 Write a function called solution(n) that takes a positive integer n and returns the number of different staircases that can be built from exactly n bricks.
 n will always be at least 3 (so you can have a staircase at all), but no more than 200
 '''
+
 import numpy as np
 class Stair_calculator:
     max_bricks = 200
