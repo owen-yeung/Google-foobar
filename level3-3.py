@@ -4,44 +4,40 @@ n will always be at least 3 (so you can have a staircase at all), but no more th
 '''
 
 '''
-Observations:
-- for n bricks, (n-1, 1) is always a staircase
-n_staris_with_height(n-2, n) = 1 + sol(2) ([n-2, 2] + sol(2))
-(n-3,3) (n-3, 2, 1) = (n-3,3) + sol(3)
-(n-4, 4) (n-4, 3, 1) = (n-4, 4) + sol(4)
-.
-.
-.
-n_staris_with_height(n-x, n) = 1 + sol(x)
-.
-.
-.
-* Holds for increasing x until n - x = x + 1 or x + 2
-* What about for max height < n / 2 ?
-* (we must move bricks from the second highest step to maintain staircase validity)
-* Can only be moved to a step that's 2 larger than the next step
-* IDEA: function returns number of staircases WITH HEIGHT = x
-.
-.
-.
-
+Algorithm:
+Step 1: compute the n*h triangular matrix of n_stairs_max_height(n, h)
 '''
 
-'''
-Brainstorm:
-suppose for some A i know solution(A)
-Then I know solution(2A+1) with max height A+1
-max height A+2: solution (A-1)
-max height A+3: solution(A-2) (actually no, I can move bricks in front)
-.
-.
-.
+def n_stairs_max_height(height, bricks):
+    if bricks < 3:
+        return 0
+    # max height is bricks - 1
+    if height > bricks - 1:
+        return 0
+    if height <= 1:
+        return 0
+    count = 0
+    for h in range(2, height):
+        count += n_stairs_with_height(h)
+    return count
 
-'''
-
-def n_stairs_with_height(height, bricks):
+def write_lookup():
+    '''
+    Compute the lookup table
+    :return:
     '''
 
+def write_to_lookup(height, bricks, table):
+    '''
+    Adds the entry to the lookup table
+    :param height:
+    :param bricks:
+    :return:
+    '''
+    table[bricks][height] = n_stairs_with_height(height, bricks)
+def n_stairs_with_height(height, bricks):
+    '''
+    May have to add lookup for speed (use lookup if value exists, otherwise compute)
     :param height:
     :param bricks: ensure height < bricks
     :return: 0 if no valid stairs
@@ -86,5 +82,9 @@ def n_stairs_any_height(bricks):
         n_stairs += n_stairs_with_height(h, bricks)
     return n_stairs
 
-print([(i, n_stairs_any_height(i)) for i in range(5,29)])
+# print([(i, n_stairs_any_height(i)) for i in range(5,29)])
 # print(n_stairs_any_height(200))
+table = [[0 for i in range(10)] for i in range(10)]
+print(table[3][2])
+write_to_lookup(2,3,table)
+print(table[3][2])
